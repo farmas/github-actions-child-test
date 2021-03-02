@@ -1,0 +1,11 @@
+name: E2E API Tests
+
+on:
+  repository_dispatch:
+    types: [test-event]
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hello, world!
